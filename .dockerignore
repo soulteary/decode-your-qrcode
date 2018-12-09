@@ -1,0 +1,12 @@
+.idea
+*.iml
+.dockerignore
+.gitignore
+.git
+
+Dockerfile
+IMAGE_NAME.txt
+make-image.sh
+node_modules
+
+docker-compose.yml

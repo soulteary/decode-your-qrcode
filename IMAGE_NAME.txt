@@ -1,0 +1,1 @@
+docker.lab.com/decode-qrcode.lab.com:0.0.1

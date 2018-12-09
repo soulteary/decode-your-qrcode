@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+
+  decode:
+    image: docker.lab.com/decode-qrcode.lab.com:0.0.1
+    expose:
+      - 3000
+    networks:
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.port=3000"
+      - "traefik.frontend.rule=Host:decode-qrcode.lab.com"
+      - "traefik.frontend.entryPoints=http,https"
+
+networks:
+  traefik:
+    external: true
